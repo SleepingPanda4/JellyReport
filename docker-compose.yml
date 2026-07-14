@@ -1,0 +1,12 @@
+services:
+
+  frontend:
+    build:
+      context: ./frontend
+
+    container_name: jellyreport_frontend
+
+    ports:
+      - "10910:80"
+
+    restart: unless-stopped
